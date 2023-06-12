@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 # version adaptation for PyTorch > 1.7.1
-IS_HIGH_VERSION = tuple(map(int, torch.__version__.split('+')[0].split('.'))) > (1, 7, 1)
+IS_HIGH_VERSION = True
 if IS_HIGH_VERSION:
     import torch.fft
 
